@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2ebe3;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  height: 450px;
+  width: 700px;
+  border-radius: 1.5em;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-four-column {
+  /* row-gap: 1rem; */
+  grid-template-rows: 20px 80px 100px 120px;
+}
+
+.cup-image img {
+  width: 350px;
+  height: 450px;
+  
+  border-radius: 1.5em 0 0 1.5em;
+}
+
+.cup-content {
+  height: 450px;
+  width: 350px;
+  text-align: left;
+  background-color: #fefffe;
+  padding: 1.5em 2em;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.cup-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.cup-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  margin: 0.6em 0 0.7em 0;
+}
+
+.cup-content p {
+  font-family: "Montserrat", sans-serif;
+  width: 96%;
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+.price p {
+  font-size: 2rem;
+  color: #3d8066;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  margin: 0.6em 0 0.7em 0;
+}
+
+.price span {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn {
+  display: block;
+  margin: 2em 0 1em 0;
+  background-color: #3d8066;
+  width: 100%;
+  padding: 1em 0;
+  color: #fff;
+  border: 0;
+  border-radius: 0.7em;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn img {
+  margin-right: 1em;
+}
+
+.same{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1;
+    margin: 0.6em 0 0.7em 0;
+
+}
+
+.btn:hover
+{
+    background-color: #2E4D40;
+}
+
+/* Media Quries */
+
+@media (max-width:700px) {
+  .grid-two-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
